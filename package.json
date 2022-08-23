@@ -7,8 +7,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
-    "prettier": "prettier \"src/**/*.{js,ts,tsx,jsx}\" --write"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prettier": "prettier \"src/**/*.{js,ts,tsx,jsx}\" --write",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,6 +27,7 @@
     "@types/prettier": "^2.7.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "husky": "^8.0.1",
     "prettier": "2.7.1",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
