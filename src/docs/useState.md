@@ -1,4 +1,4 @@
-#useState
+# useState
 ## 1. Syntax
     - syntax: const [state, setState] = useState(initialState);
     - returns: a stateful value, and a function to update it.
