@@ -6,7 +6,7 @@ interface IUseTitleProps {
 
 export const useTitle = (props?: IUseTitleProps) => {
 
-    const [title, setTitle] = useState(props?.initialTitle ?? "");
+    const [title, setTitle] = useState<string>(props?.initialTitle ?? "");
 
     useEffect(() => {
         document.title = title;
