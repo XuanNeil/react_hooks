@@ -1,11 +1,12 @@
+/*eslint-disable @typescript-eslint/no-explicit-any*/
 /**
  * Hooks này cho phép nhấn chuột bên ngoài 1 phần tử được chỉ định.
  * Được sủ dụng cho dropdown menus, tooltip, etc
  */
+
 import {useEffect} from "react";
 
-
-export function useOnClickOutSideHook(ref: any, callback: any) {
+export function useOnClickOutSideHooks<T extends HTMLElement>(ref: T | any, callback: (event: any) => void) {
 
     useEffect(() => {
         const listener = (event: any) => {

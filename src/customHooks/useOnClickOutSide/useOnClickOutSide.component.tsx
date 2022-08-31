@@ -1,5 +1,5 @@
 import {useRef, useState} from "react";
-import {useOnClickOutSideHook} from "src/customHooks/useOnClickOutSide/useOnClickOutSide.hook";
+import {useOnClickOutSideHooks} from "src/customHooks/useOnClickOutSide";
 
 
 export function UseOnClickOutSideComponent(): JSX.Element {
@@ -8,7 +8,7 @@ export function UseOnClickOutSideComponent(): JSX.Element {
     // State for our modal
     const [isModalOpen, setModalOpen] = useState(false);
     // Call hook passing in the ref and a function to call on outside click
-    useOnClickOutSideHook(ref, () => setModalOpen(false));
+    useOnClickOutSideHooks(ref, () => setModalOpen(false));
 
     return (
         <div>

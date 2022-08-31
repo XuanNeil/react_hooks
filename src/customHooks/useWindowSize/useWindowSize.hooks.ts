@@ -1,9 +1,5 @@
 import {useEffect, useState} from "react";
-
-type TWindowSize = {
-    width: number | undefined,
-    height: number | undefined
-}
+import {TWindowSize} from "src/customHooks/useWindowSize";
 
 export const useWindowSize = () => {
     const [windowSize, setWindowSize] = useState<TWindowSize>({width: undefined, height: undefined});

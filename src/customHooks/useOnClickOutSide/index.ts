@@ -1,2 +1,2 @@
 export * from "./useOnClickOutSide.component";
-export * from "./useOnClickOutSide.hook";
+export * from "./useOnClickOutSide.hooks";
