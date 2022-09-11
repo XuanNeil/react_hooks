@@ -1,8 +1,7 @@
 import React from "react";
-import {UseOnClickOutSideComponent} from "src/customHooks/useOnClickOutSide";
 
 function App() {
-   return <><UseOnClickOutSideComponent/></>;
+   return <></>;
 }
 
 export default App;
